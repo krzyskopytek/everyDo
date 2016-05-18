@@ -16,6 +16,9 @@
 		40D311181CEB6382003FFAC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40D311161CEB6382003FFAC6 /* LaunchScreen.storyboard */; };
 		40D311231CEB6382003FFAC6 /* everyDoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D311221CEB6382003FFAC6 /* everyDoTests.m */; };
 		40D3112E1CEB6382003FFAC6 /* everyDoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D3112D1CEB6382003FFAC6 /* everyDoUITests.m */; };
+		40D3113D1CEB66A0003FFAC6 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D3113C1CEB66A0003FFAC6 /* Todo.m */; };
+		40D311401CEB7D4A003FFAC6 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D3113F1CEB7D4A003FFAC6 /* CustomTableViewCell.m */; };
+		40D311431CEBA8FC003FFAC6 /* newItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D311421CEBA8FC003FFAC6 /* newItemViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,12 @@
 		40D311291CEB6382003FFAC6 /* everyDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = everyDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D3112D1CEB6382003FFAC6 /* everyDoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = everyDoUITests.m; sourceTree = "<group>"; };
 		40D3112F1CEB6382003FFAC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40D3113B1CEB66A0003FFAC6 /* Todo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo.h; sourceTree = "<group>"; };
+		40D3113C1CEB66A0003FFAC6 /* Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
+		40D3113E1CEB7D4A003FFAC6 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTableViewCell.h; path = ../CustomTableViewCell.h; sourceTree = "<group>"; };
+		40D3113F1CEB7D4A003FFAC6 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTableViewCell.m; path = ../CustomTableViewCell.m; sourceTree = "<group>"; };
+		40D311411CEBA8FC003FFAC6 /* newItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newItemViewController.h; sourceTree = "<group>"; };
+		40D311421CEBA8FC003FFAC6 /* newItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newItemViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,11 +115,17 @@
 			children = (
 				40D311081CEB6382003FFAC6 /* AppDelegate.h */,
 				40D311091CEB6382003FFAC6 /* AppDelegate.m */,
+				40D3113E1CEB7D4A003FFAC6 /* CustomTableViewCell.h */,
+				40D3113F1CEB7D4A003FFAC6 /* CustomTableViewCell.m */,
 				40D3110B1CEB6382003FFAC6 /* MasterViewController.h */,
 				40D3110C1CEB6382003FFAC6 /* MasterViewController.m */,
+				40D311411CEBA8FC003FFAC6 /* newItemViewController.h */,
+				40D311421CEBA8FC003FFAC6 /* newItemViewController.m */,
 				40D3110E1CEB6382003FFAC6 /* DetailViewController.h */,
 				40D3110F1CEB6382003FFAC6 /* DetailViewController.m */,
 				40D311111CEB6382003FFAC6 /* Main.storyboard */,
+				40D3113B1CEB66A0003FFAC6 /* Todo.h */,
+				40D3113C1CEB66A0003FFAC6 /* Todo.m */,
 				40D311141CEB6382003FFAC6 /* Assets.xcassets */,
 				40D311161CEB6382003FFAC6 /* LaunchScreen.storyboard */,
 				40D311191CEB6382003FFAC6 /* Info.plist */,
@@ -212,6 +227,7 @@
 				TargetAttributes = {
 					40D311011CEB6382003FFAC6 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4H3VHQ32AN;
 					};
 					40D3111D1CEB6382003FFAC6 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -275,7 +291,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40D311431CEBA8FC003FFAC6 /* newItemViewController.m in Sources */,
+				40D3113D1CEB66A0003FFAC6 /* Todo.m in Sources */,
 				40D3110A1CEB6382003FFAC6 /* AppDelegate.m in Sources */,
+				40D311401CEB7D4A003FFAC6 /* CustomTableViewCell.m in Sources */,
 				40D3110D1CEB6382003FFAC6 /* MasterViewController.m in Sources */,
 				40D311071CEB6382003FFAC6 /* main.m in Sources */,
 				40D311101CEB6382003FFAC6 /* DetailViewController.m in Sources */,
@@ -419,10 +438,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = everyDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.kopytek.everyDo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -430,10 +452,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = everyDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ca.kopytek.everyDo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -502,6 +527,7 @@
 				40D311341CEB6382003FFAC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40D311351CEB6382003FFAC6 /* Build configuration list for PBXNativeTarget "everyDoTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +536,7 @@
 				40D311371CEB6382003FFAC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40D311381CEB6382003FFAC6 /* Build configuration list for PBXNativeTarget "everyDoUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +545,7 @@
 				40D3113A1CEB6382003FFAC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
